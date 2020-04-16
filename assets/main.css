@@ -1,2 +1,19 @@
 #updated_at {
+    
     }
+.card {
+
+}
+#mainCont {
+    height:500px;
+    width: 1000px;
+}
+#stats1{
+    width: 30rem;
+    position: absolute;
+    float: left;
+}
+#stats2{
+    width: 30rem;
+    float: right;
+}

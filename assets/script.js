@@ -8,6 +8,13 @@ fetch("https://corona-api.com/countries/ge")
     გამოჯანმრთელებული: ${data.data.latest_data.recovered},
     დაღუპული: ${data.data.latest_data.deaths},
     ამჟამად დაინფიცირებული: ${active}`);
-$('#updated_at').append(`მონაცემები ბოლოს განახლდა - ${data.data.updated_at}`)
+    $('#confirmed').append(`სულ დაინფიცირებული: ${data.data.latest_data.confirmed}`);
+    $('#recovered').append(`გამოჯანმრთელებული: ${data.data.latest_data.recovered}`);
+    $('#death').append(`გარდაცვლილი: ${data.data.latest_data.deaths}`);
+    $('#active').append(`ამჟამად დაინფიცირებული: ${active}`);
+    $('#todayDeaths').append(`გარდაცვლილი: ${data.data.today.deaths}`);
+    $('#todayConfirmed').append(`დაინფიცირებული: ${data.data.today.confirmed}`);
+$('#updated_at').append(`მონაცების განახლების თარიღი - ${data.data.updated_at}`)
+
 console.log(data)
 })
