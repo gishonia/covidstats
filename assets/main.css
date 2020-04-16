@@ -10,10 +10,12 @@
 }
 #stats1{
     width: 30rem;
-    position: absolute;
-    float: left;
+
 }
 #stats2{
-    width: 30rem;
-    float: right;
+    width: 28rem;
+
+}
+#table1{
+    width: 70%;
 }
