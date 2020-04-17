@@ -5,6 +5,7 @@ var myChart = new Chart(ctx, {
     data: {
         datasets: [{
             label: 'დაინფიცირებული',
+            display: 'true',
             data: confirmedA,
             type: 'line',
             backgroundColor: 'rgba(255, 99, 132, 0.2)',
