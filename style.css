@@ -20,7 +20,7 @@ a {
 .container {
   position: absolute;
   left: calc(50% - 501px);
-  width: 1002px;
+  width: 620px;
   margin: 20px 0;
   padding: 30px;
   border: 1px dashed #646c71;
@@ -28,13 +28,12 @@ a {
 
 .side {
 	float: left;
-	width: 219px;
   padding-right: 30px;
 }
 
 .side h1 {
 	margin: 0;
-	color: #fff;
+	color: #1c8ed6;
 	font-size: 1.1em;
 	letter-spacing: 1px;
   line-height: 1.3;

@@ -1,71 +1,112 @@
-<!DOCTYPE html>
-<html lang="en" >
-<head>
+<html lang="en"><head>
   <meta charset="UTF-8">
   <title>CodePen - Iconifying Content - Dashboard</title>
-  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="assets/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"><link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<div class="container">
+
+  
+  <nav class="navbar navbar-light bg-light nav1">
+    <h1 style="
+    padding-left: 34%;
+    /* color: #fff; */
+    padding-top: 20px;
+">Covid-19 ვირუსის გავრცელების სტატისტიკა საქართველოში</h1>
+  </nav>
+
+<div class="container" style="
+    left: 5%;
+    top:100px;
+">
   <div class="side">
     <h1>მიმდინარე სტატისტიკა</h1>
     <div class="stats">
       <ul data-metric="visits">
         <li>
-          <div class="key">ინფიცირებული</div>
-          <div class="val">356</div>
+          <div class="key">სულ ინფიცირებული</div>
+          <div class="val" id="confirmed"></div>
         </li>
         <li>
           <div class="key">გამოჯანმრთელებული</div>
-          <div class="val">50.9</div>
+          <div class="val" id="recovered"></div>
         </li>
         <li>
           <div class="key">გარდაცვლილი</div>
-          <div class="val">6</div>
+          <div class="val" id="death"></div>
         </li>
+        <li>
+          <div class="key">კრიტიკულ მდგომარეობაში</div>
+          <div class="val" id="critical"></div>
+        </li>
+        <div class="key">ამჟამად დაინფიცირებული</div>
+        <div class="val" id="active"></div>
+      </li>
       </ul>
 
-      <ul data-metric="conversions">
-        <li>
-          <div class="key">Total Conversions</div>
-          <div class="val">456</div>
-        </li>
-        <li>
-          <div class="key">Average</div>
-          <div class="val">65.1</div>
-        </li>
-        <li>
-          <div class="key">Change</div>
-          <div class="val">-47.4%</div>
-        </li>
-      </ul>
+
     </div>
+    
+    
+  </div>
+
+  <div class="side" style="
+    border-left: 1px dashed #646c71;
+    padding-left: 30px;
+    height: 220px;
+">
     <h1>დღევანდელი სტატისტიკა</h1>
-    <ul>
-      <li>
-        <div class="key">Range</div>
-        <div class="val">7 days</div>
-      </li>
-      <li>
-        <div class="key">Timezone</div>
-        <div class="val">PDT</div>
-      </li>
-      <li>
-        <div class="key">Spirit Animal</div>
-        <div class="val">Duck</div>
-      </li>
-    </ul>
-  </div>
-  <div class="main">
-    <ul>
+    <div class="stats">
+      <ul data-metric="visits">
+        <li>
+          <div class="key">გარდაცვლილი</div>
+          <div class="val" id="todayDeaths"></div>
+        </li>
+        <li>
+          <div class="key">დაინფიცირებული</div>
+          <div class="val" id="todayConfirmed"></div>
+        </li>
+      </ul>
 
-    </ul>
+
+    </div>
   </div>
+
+  <br>
+
+<br>
+
+  
 </div>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
 
-</body>
-</html>
+<div>
+<canvas id="myChart" width="130" height="50"></canvas>
+</div>
+<br>
+<br>
+<footer id="updated_at" style="
+    width: 600px;
+    margin-left:10px;
+    color: #7a8185;
+    "></footer>
+
+    <br>
+    
+    <span id="copiright" style="
+    color: #7a8185;
+    padding-left: 45%;
+"> ©2020 Gishonia<span>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
+<script src="assets//script.js"></script>
+<script src="assets//chart.js"></script>
+
+
+
+</body></html>
