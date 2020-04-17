@@ -11,7 +11,7 @@
 
 
 
-<nav class="navbar navbar-light bg-light">
+<nav class="navbar navbar-light bg-light nav1">
     <h4>Covid-19 ვირუსის გავრცელების სტატისტიკა საქართველოში</h4>
   </nav>
 
@@ -26,6 +26,7 @@
       <li class="list-group-item" id="confirmed"></li>
       <li class="list-group-item" id="recovered"></li>
       <li class="list-group-item" id="death"></li>
+      <li class="list-group-item" id="critical"></li>
       <li class="list-group-item" id="active"></li>
     </ul>
   </div>
@@ -44,9 +45,10 @@
 </table>
 
 <br>
-
-<p id="updated_at" style="
-    width: 600px;"></p>
+<canvas id="myChart" width="130" height="20"></canvas>
+<br>
+<footer id="updated_at" style="
+    width: 600px; margin-left:10px"></footer>
 
 
 
@@ -55,4 +57,6 @@
 </html>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
 <script src="assets//script.js"></script>
+<script src="assets//chart.js"></script>
