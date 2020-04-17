@@ -1,66 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" >
 <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/main.css">
+  <meta charset="UTF-8">
+  <title>CodePen - Iconifying Content - Dashboard</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
 
-<title>Covid-19 ვირუსის გავრცელების სტატისტიკა საქართველოში</title>
 </head>
 <body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <div class="side">
+    <h1>მიმდინარე სტატისტიკა</h1>
+    <div class="stats">
+      <ul data-metric="visits">
+        <li>
+          <div class="key">ინფიცირებული</div>
+          <div class="val">356</div>
+        </li>
+        <li>
+          <div class="key">გამოჯანმრთელებული</div>
+          <div class="val">50.9</div>
+        </li>
+        <li>
+          <div class="key">გარდაცვლილი</div>
+          <div class="val">6</div>
+        </li>
+      </ul>
 
-
-
-
-<nav class="navbar navbar-light bg-light nav1">
-    <h4>Covid-19 ვირუსის გავრცელების სტატისტიკა საქართველოში</h4>
-  </nav>
-
-<table class="table table-responsive-sm" id="table1">
-    <tr>
-        <td>
-    <div class="card mb-3" id="stats1">
-    <div class="card-header">
-        მიმდინარე სტატისტიკა
+      <ul data-metric="conversions">
+        <li>
+          <div class="key">Total Conversions</div>
+          <div class="val">456</div>
+        </li>
+        <li>
+          <div class="key">Average</div>
+          <div class="val">65.1</div>
+        </li>
+        <li>
+          <div class="key">Change</div>
+          <div class="val">-47.4%</div>
+        </li>
+      </ul>
     </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item" id="confirmed"></li>
-      <li class="list-group-item" id="recovered"></li>
-      <li class="list-group-item" id="death"></li>
-      <li class="list-group-item" id="critical"></li>
-      <li class="list-group-item" id="active"></li>
+    <h1>დღევანდელი სტატისტიკა</h1>
+    <ul>
+      <li>
+        <div class="key">Range</div>
+        <div class="val">7 days</div>
+      </li>
+      <li>
+        <div class="key">Timezone</div>
+        <div class="val">PDT</div>
+      </li>
+      <li>
+        <div class="key">Spirit Animal</div>
+        <div class="val">Duck</div>
+      </li>
     </ul>
   </div>
-  </td>
-  <td>
-  <div class="card mb-3" id="stats2">
-    <div class="card-header">
-        დღევანდელი მონაცემები
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item" id="todayConfirmed"></li>
-      <li class="list-group-item" id="todayDeaths"></li>
+  <div class="main">
+    <ul>
+
     </ul>
   </div>
-  </td>
-</table>
-
-<br>
-<canvas id="myChart" width="130" height="50"></canvas>
-<br>
-<footer id="updated_at" style="
-    width: 600px; margin-left:10px">
-    </footer>
-    <br>
-    <span id="copiright"> &#169;2020 Gishonia<span>
-    
-
-
-
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
 
 </body>
 </html>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
-<script src="assets//script.js"></script>
-<script src="assets//chart.js"></script>
