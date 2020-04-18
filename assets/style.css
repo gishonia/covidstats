@@ -331,3 +331,9 @@ a {
 	-webkit-transform: translateY(0);
 	        transform: translateY(0);
 }
+.nav1{
+    margin-top: 10px;
+}
+#copiright {
+    margin-left: 10px;
+}
