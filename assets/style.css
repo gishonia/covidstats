@@ -13,10 +13,6 @@ body {
   font: 1em/1 'Open Sans', sans-serif;
 }
 
-a {
-  text-decoration: none;
-}
-
 .container {
   position: absolute;
   left: calc(50% - 501px);
@@ -39,7 +35,7 @@ a {
 }
 
 .side ul {
-	margin: 48px 0;
+	margin: 10px 0;
 	padding: 0;
 	list-style: none;
 	font-size: .9em;
